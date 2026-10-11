@@ -1,0 +1,8 @@
+# downloaded on-device detector (./fetch-deps.sh) - not ours to redistribute
+deps/
+assets/*.tflite
+# build output
+build/
+gen/
+classes/
+.DS_Store
