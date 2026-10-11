@@ -58,10 +58,26 @@ public class TrackerActivity extends Activity {
 
     @Override
     protected void onPause() {
-        // camera off the moment we leave the screen
-        if (tracker != null) { tracker.stop(); tracker = null; }
-        Log.d(TAG, "camera released");
+        // camera off the moment we leave the screen - off the UI thread, since
+        // closing a camera that was unplugged mid-game can block in the HAL
+        if (tracker != null) {
+            final CameraTracker t = tracker;
+            tracker = null;
+            new Thread(() -> { t.stop(); Log.d(TAG, "camera released"); }).start();
+        }
         super.onPause();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        // Never linger behind IPTV: after the camera was unplugged mid-game the
+        // process sat cached holding the camera op (green privacy dot) for an
+        // hour. Exiting is the only release that can't get stuck, and the game
+        // relearns the room on every launch anyway.
+        finishAndRemoveTask();
+        new android.os.Handler(android.os.Looper.getMainLooper()).postDelayed(
+            () -> android.os.Process.killProcess(android.os.Process.myPid()), 1500);
     }
 
     private void hideBars() {
