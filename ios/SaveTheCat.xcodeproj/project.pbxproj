@@ -1,0 +1,259 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C47CA700000000000000005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C47CA700000000000000001 /* AppDelegate.swift */; };
+		5C47CA700000000000000006 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C47CA700000000000000002 /* GameView.swift */; };
+		5C47CA700000000000000007 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C47CA700000000000000003 /* GameViewController.swift */; };
+		5C47CA700000000000000008 /* TiltController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C47CA700000000000000004 /* TiltController.swift */; };
+		5C47CA70000000000000000A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C47CA700000000000000009 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5C47CA70000000000000000C /* SaveTheCat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaveTheCat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C47CA700000000000000001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5C47CA700000000000000002 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		5C47CA700000000000000003 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		5C47CA700000000000000004 /* TiltController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiltController.swift; sourceTree = "<group>"; };
+		5C47CA700000000000000009 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5C47CA70000000000000000B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C47CA700000000000000012 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C47CA70000000000000000D = {
+			isa = PBXGroup;
+			children = (
+				5C47CA70000000000000000E /* SaveTheCat */,
+				5C47CA70000000000000000F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5C47CA70000000000000000F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C47CA70000000000000000C /* SaveTheCat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C47CA70000000000000000E /* SaveTheCat */ = {
+			isa = PBXGroup;
+			children = (
+				5C47CA700000000000000001 /* AppDelegate.swift */,
+				5C47CA700000000000000002 /* GameView.swift */,
+				5C47CA700000000000000003 /* GameViewController.swift */,
+				5C47CA700000000000000004 /* TiltController.swift */,
+				5C47CA700000000000000009 /* Assets.xcassets */,
+				5C47CA70000000000000000B /* Info.plist */,
+			);
+			path = SaveTheCat;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C47CA700000000000000013 /* SaveTheCat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C47CA70000000000000001A /* Build configuration list for PBXNativeTarget "SaveTheCat" */;
+			buildPhases = (
+				5C47CA700000000000000010 /* Sources */,
+				5C47CA700000000000000012 /* Frameworks */,
+				5C47CA700000000000000011 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SaveTheCat;
+			productName = SaveTheCat;
+			productReference = 5C47CA70000000000000000C /* SaveTheCat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C47CA700000000000000014 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					5C47CA700000000000000013 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 5C47CA700000000000000019 /* Build configuration list for PBXProject "SaveTheCat" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5C47CA70000000000000000D;
+			productRefGroup = 5C47CA70000000000000000F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C47CA700000000000000013 /* SaveTheCat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C47CA700000000000000011 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C47CA70000000000000000A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C47CA700000000000000010 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C47CA700000000000000005 /* AppDelegate.swift in Sources */,
+				5C47CA700000000000000006 /* GameView.swift in Sources */,
+				5C47CA700000000000000007 /* GameViewController.swift in Sources */,
+				5C47CA700000000000000008 /* TiltController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5C47CA700000000000000015 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				SDKROOT = iphoneos;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5C47CA700000000000000016 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				SDKROOT = iphoneos;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5C47CA700000000000000017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SaveTheCat/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Save the Cat";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiri0082.savethecat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5C47CA700000000000000018 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SaveTheCat/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Save the Cat";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiri0082.savethecat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C47CA700000000000000019 /* Build configuration list for PBXProject "SaveTheCat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C47CA700000000000000015 /* Debug */,
+				5C47CA700000000000000016 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C47CA70000000000000001A /* Build configuration list for PBXNativeTarget "SaveTheCat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C47CA700000000000000017 /* Debug */,
+				5C47CA700000000000000018 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C47CA700000000000000014 /* Project object */;
+}

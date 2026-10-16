@@ -6,3 +6,8 @@ build/
 gen/
 classes/
 .DS_Store
+
+# Xcode
+ios/**/xcuserdata/
+ios/build/
+DerivedData/

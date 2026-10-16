@@ -96,3 +96,29 @@ Launch options:
 | `am start -n com.jarvis.tracker/.TrackerActivity --es view blocks` | Plain block view instead of the game |
 | `am start -n com.jarvis.tracker/.TrackerActivity --es track detector` | Older detector-driven tracking |
 | `--ei detectors N` | Number of parallel detectors |
+
+## iPhone version (`ios/`)
+
+A native Swift/UIKit port of the same game for iPhone, with no camera at all:
+
+- **Tilt to steer:** tip the phone left or right and the umbrella follows
+  (about 20° either way reaches the screen edge). It works held flat or
+  upright like a steering wheel.
+- **Hold the screen** for the wide umbrella (the TV version's "arms out").
+- **Tap to start.** Whatever angle the phone is held at when you tap counts
+  as level, so a slightly crooked grip still starts centred.
+- Leaving the app pauses it and the timer, like walking out of the camera's view.
+- Rules, timings, colours and the One-Euro smoothing are carried over from
+  `GameView.java`; the knobs are at the top of `ios/SaveTheCat/GameView.swift`
+  (tilt range in `TiltController.swift`).
+
+Build and run:
+
+1. Open `ios/SaveTheCat.xcodeproj` in Xcode.
+2. Target **SaveTheCat** → *Signing & Capabilities* → pick your Team (a free
+   Apple ID works for your own phone). Change the bundle ID if Xcode says it's taken.
+3. Plug in the iPhone, select it as the run destination, press **Run**.
+   First time only: on the phone, trust the developer under *Settings → General
+   → VPN & Device Management*, and turn on *Developer Mode* if asked.
+
+In the Simulator there's no tilt sensor, so drag a finger to steer instead.
